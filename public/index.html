@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <title>Exercise 2 - $watch</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"> </script>
+    <script src="./controllers.js"></script>
+  </head>
+
+  <body>
+    <h1>This is my heading</h1>
+    <div ng-controller="first">
+      <button ng-click="getVal()">First Get</button>
+      <button ng-click="setVal(5)">First Set(5)</button>
+      <p>value = {{ val }}</p>
+    </div>
+
+    <div ng-controller="second">
+      <button ng-click="getVal()">Second Get</button>
+      <button ng-click="setVal(9)">Second Set(9)</button>
+      <p>value = {{ val }}</p>
+    </div>
+
+  </body>
+</html>
